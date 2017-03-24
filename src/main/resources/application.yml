@@ -1,13 +1,13 @@
-server:
-  port: 7072
-spring:
-  application:
-    name: server-01
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka-server-1.6.1/v2/
-  instance:
-    metadataMap:
-    #server-01:c8c63100f71a1933cbf71d5483fd1c4f   冒号前面是应用名，后面是一串随机数
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#server:
+#  port: 7072
+#spring:
+#  application:
+#    name: server-01
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8080/eureka-server-1.6.1/v2/
+#  instance:
+#    metadataMap:
+#    #server-01:c8c63100f71a1933cbf71d5483fd1c4f   冒号前面是应用名，后面是一串随机数
+#      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
